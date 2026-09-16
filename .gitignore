@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# 비밀 정보 - 절대 커밋 금지
+.env
+.env.local
+*.key
+
+# Streamlit
+.streamlit/secrets.toml
+
+# 로컬 상태 파일 (나중에 영속성 붙일 경우)
+*.db
+*.sqlite3
+*.db-wal
+*.db-shm
+store_state.json
+
+# 카탈로그 원본은 추적한다 (seed 에서 구운 결과. shop.db 는 위에서 무시됨)
+!data/catalog.seed.db
+
+# 편집기 / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Office 임시 파일
+~$*
+
+# 샌드박스가 지우지 못한 파일 보관함 (수동 삭제용)
+_to_delete/
+
+# 평가 결과 스냅샷 (측정할 때마다 생김)
+eval_*.json
+verify/probe_raw/
+
+# macOS/FUSE가 열려 있던 삭제 파일을 임시로 남기는 항목
+data/.fuse_hidden*
+_baseline/
